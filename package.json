@@ -1,0 +1,29 @@
+{
+  "name": "D6",
+  "version": "1.0.0",
+  "description": "Mana Saya Tahu",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XBrayen/D6.git"
+  },
+  "keywords": [
+    "D6",
+    "XBrayen"
+  ],
+  "author": "XBrayen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XBrayen/D6/issues"
+  },
+  "homepage": "https://github.com/XBrayen/D6#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.4"
+  }
+}
