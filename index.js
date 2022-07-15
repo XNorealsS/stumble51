@@ -10,13 +10,13 @@ const questions = [
     {
         type: "input",
         name: "authorization",
-        message: color("Enter Auth Token :"),
-        prefix: `${color("[+]", "redBright")}`,
-        suffix: "",
+        message: color("Authorization keys "),
+        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
+        suffix: ":",
         validate: function (input) {
             const done = this.async();
             if (!input) {
-                done('${color(">>", "redBright")}', 'Kamu Perlu Memberikan keys Auth Sebagai  Object');
+                done('You need to provide Authorization keys');
                 return false;
             }
             let authParse;
@@ -25,50 +25,38 @@ const questions = [
             } catch (error) {
                 authParse = error.message;
             }
-            if (typeof authParse != 'object') {
-                done('Kamu Perlu Memberikan keys Auth Sebagai Object');
+            if (typeof authParse != "object") {
+                done("You need to provide Authorization keys as Object");
                 return false;
             }
             return done(null, true);
         },
     },
     {
+    message: color(""),
         type: "list",
         name: "round",
-        message: color("Enter Keys Auth 'Round' ="),
-        prefix: `${color("[+]", "redBright")}`,
-        suffix: "",
+        message: color("Authorization keys taken at 'Round' "),
+        prefix: `${color("[", "redBright")}+${color("]", "redBright")}`,
+        suffix: ":",
         choices: ["Stage 1", "Stage 2", "Stage 3"],
         filter: (value) => {
             return {
-                "Stage 1":1,
-                "Stage 2":2,
-                "Stage 3":3,
+                "Stage 1": 1,
+                "Stage 2": 2,
+                "Stage 3": 3,
             }[value];
         },
     },
 ];
-
-console.log(`
-██╗  ██╗    ███╗   ██╗ ██████╗ ██████╗ ███████╗ █████╗ ██╗     ███████╗
-╚██╗██╔╝    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝██╔══██╗██║     ██╔════╝
- ╚███╔╝     ██╔██╗ ██║██║   ██║██████╔╝█████╗  ███████║██║     ███████╗
- ██╔██╗     ██║╚██╗██║██║   ██║██╔══██╗██╔══╝  ██╔══██║██║     ╚════██║
-██╔╝ ██╗    ██║ ╚████║╚██████╔╝██║  ██║███████╗██║  ██║███████╗███████║
-╚═╝  ╚═╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
-      
- ${chalk.green.bold('NEW TOOL V5.1 FIXED')}
- ${chalk.red.bold('TYPE : X PUBLIC TOOL BY NOREALS')}
- By : ${chalk.red.bold('@Only_NoRealss')} - ${chalk.blue.bold('X CHEAT DEVELOPER SINCE 2019')}
- =========================================================================
- `)
-
 
 inquirer.prompt(questions)
     .then(async ({ authorization, round }) => {
         const authParse = JSON.parse(authorization);
         iStumble(round, authParse);
     });
+
+
 
 function iStumble(round, authorization) {
     setInterval(async function iStumble() {
@@ -79,16 +67,17 @@ function iStumble(round, authorization) {
             } else if (typeof data == "object") {
                 const date = new Date();
                 let { Id, Username, Country, Region, Crowns, SkillRating } = data.User;
-                const print = `[${color(date.getHours())}:${date.getMinutes()}] ` + [color(Username, "redBright"), color(Country, "white"), color(Region, "redBright"), color(Crowns, "white"), color(SkillRating, "redBright")].join(" | ");
+                const print = `[ ${(date.getHours())}:${date.getMinutes()} ] ` + [color(Username), color(Country, "white"), color(Region, "redBright"), color(Crowns, "white"), color(SkillRating, "redBright")].join(" | ");
                 console.log(print);
             }
         } catch (error) {}
-    }, Number(4000));
+    }, Number(3000));
 }
 
 function color(text, color) {
-    return color ? chalk[color].bold(text) : chalk.white.bold(text);
+    return color ? chalk[color].bold(text) : chalk.red.bold(text);
 }
+
 
 function stageRequest(authorization, round) {
     return new Promise((resolve, reject) => {
