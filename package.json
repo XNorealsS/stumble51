@@ -1,5 +1,5 @@
 {
-  "name": "nr",
+  "name": "@i-scrapper/stumble-guys",
   "version": "1.0.0",
   "description": "nr",
   "main": "index.js",
@@ -12,7 +12,7 @@
     "url": "git+https://github.com/XNorealsS/hgg.git"
   },
   "keywords": [
-    "nr",
+    "@i-scrapper/stumble-guys",
     "Nr"
   ],
   "author": "Nr",
