@@ -25,6 +25,7 @@
     "chalk": "^4.1.2",
     "inquirer": "^8.2.4",
     "node-fetch": "^2.6.7",
+    "moment": "^2.29.3",
     "readline-sync": "^1.4.10"
   }
 }
