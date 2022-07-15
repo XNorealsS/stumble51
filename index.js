@@ -1,6 +1,10 @@
 const chalk = require("chalk");
 const figlet = require("figlet");
 const inquirer = require("inquirer");
+const fetch = require('node-fetch');
+const rs = require('readline-sync');
+const request = require("@i-scrapper/plugins-request");
+
 
 console.clear()
     console.log(`
@@ -21,7 +25,7 @@ const questions = [
     {
         type: "input",
         name: "authorization",
-        message: color("Enter Auth Token : "),
+        message: color("Enter Auth Token :"),
         prefix: `${color("[+]", "redBright")}`,
         suffix: "",
         validate: function (input) {
