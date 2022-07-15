@@ -2,7 +2,7 @@
   "name": "@i-scrapper/stumble-guys",
   "version": "1.0.0",
   "description": "Stumble-Guys - i-scrapper",
-  "main": "stumble.js",
+  "main": "index.js",
   "scripts": {
     "test": "node .",
     "start": "node ."
