@@ -63,7 +63,7 @@ const questions = [
 inquirer.prompt(questions)
     .then(async ({ authorization, round }) => {
         const authParse = JSON.parse(authorization);
-        iStumble(interval, round, authParse);
+        iStumble(round, authParse);
     });
 
 function iStumble(round, authorization) {
