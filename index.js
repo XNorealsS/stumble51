@@ -1,6 +1,8 @@
 const chalk = require('chalk');
+const fetch = require('node-fetch');
+const rs = require('readline-sync');
 const inquirer = require("inquirer");
-
+const request = require("@i-scrapper/plugins-request");
 
 
 
