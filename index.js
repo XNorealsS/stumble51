@@ -1,23 +1,10 @@
 const chalk = require("chalk");
 const figlet = require("figlet");
 const inquirer = require("inquirer");
-const request = require("@i-scrapper/plugins-request");
 
 
 console.clear()
-    console.log(`
-██╗  ██╗    ███╗   ██╗ ██████╗ ██████╗ ███████╗ █████╗ ██╗     ███████╗
-╚██╗██╔╝    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝██╔══██╗██║     ██╔════╝
- ╚███╔╝     ██╔██╗ ██║██║   ██║██████╔╝█████╗  ███████║██║     ███████╗
- ██╔██╗     ██║╚██╗██║██║   ██║██╔══██╗██╔══╝  ██╔══██║██║     ╚════██║
-██╔╝ ██╗    ██║ ╚████║╚██████╔╝██║  ██║███████╗██║  ██║███████╗███████║
-╚═╝  ╚═╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
-      
- ${chalk.green.bold('NEW TOOL V5.1 FIXED')}
- ${chalk.red.bold('TYPE : X PUBLIC TOOL BY NOREALS')}
- By : ${chalk.red.bold('@Only_NoRealss')} - ${chalk.blue.bold('X CHEAT DEVELOPER SINCE 2019')}
- =========================================================================
- `)
+    
 
 const questions = [
     {
@@ -61,6 +48,21 @@ const questions = [
         },
     },
 ];
+
+console.log(`
+██╗  ██╗    ███╗   ██╗ ██████╗ ██████╗ ███████╗ █████╗ ██╗     ███████╗
+╚██╗██╔╝    ████╗  ██║██╔═══██╗██╔══██╗██╔════╝██╔══██╗██║     ██╔════╝
+ ╚███╔╝     ██╔██╗ ██║██║   ██║██████╔╝█████╗  ███████║██║     ███████╗
+ ██╔██╗     ██║╚██╗██║██║   ██║██╔══██╗██╔══╝  ██╔══██║██║     ╚════██║
+██╔╝ ██╗    ██║ ╚████║╚██████╔╝██║  ██║███████╗██║  ██║███████╗███████║
+╚═╝  ╚═╝    ╚═╝  ╚═══╝ ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚══════╝
+      
+ ${chalk.green.bold('NEW TOOL V5.1 FIXED')}
+ ${chalk.red.bold('TYPE : X PUBLIC TOOL BY NOREALS')}
+ By : ${chalk.red.bold('@Only_NoRealss')} - ${chalk.blue.bold('X CHEAT DEVELOPER SINCE 2019')}
+ =========================================================================
+ `)
+
 
 inquirer.prompt(questions)
     .then(async ({ authorization, round }) => {
