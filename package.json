@@ -1,5 +1,5 @@
 {
-  "name": "NOREALSSG",
+  "name": "stumbleploit",
   "version": "1.0.0",
   "description": "X CHEAR",
   "main": "index.js",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XBrayen/D6.git"
+    "url": "git+https://github.com/XNorealsS/hgg.git"
   },
   "keywords": [
-    "D6",
-    "XBrayen"
+    "stumbleploit",
+    "XNOREALS"
   ],
   "author": "XNOREALS",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XBrayen/D6/issues"
+    "url": "https://github.com/XNorealsS/hgg/issues"
   },
-  "homepage": "https://github.com/XBrayen/D6#readme",
+  "homepage": "https://github.com/XNorealsS/hgg#readme",
   "dependencies": {
     "chalk": "^4.1.2",
     "figlet": "^1.5.2",
