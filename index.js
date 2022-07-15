@@ -41,9 +41,9 @@ const questions = [
         choices: ["Stage 1", "Stage 2", "Stage 3"],
         filter: (value) => {
             return {
-                "Stage 1": 1,
-                "Stage 2": 2,
-                "Stage 3": 3,
+                "Stage 1":1,
+                "Stage 2":2,
+                "Stage 3":3,
             }[value];
         },
     },
