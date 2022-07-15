@@ -1,0 +1,28 @@
+{
+  "name": "hgg",
+  "version": "1.0.0",
+  "description": "xinn",
+  "main": "index.js",
+  "scripts": {
+    "test": "node .",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XNorealsS/hgg/D6.git"
+  },
+  "keywords": [
+    "hgg",
+    "XNorealsS"
+  ],
+  "author": "noreals",
+  "bugs": {
+    "url": "https://github.com/XNorealsS/hgg/issues"
+  },
+  "homepage": "https://github.com/XNorealsS/hgg/D6#readme",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^8.2.4"
+  }
+}
