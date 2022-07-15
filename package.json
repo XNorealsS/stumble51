@@ -1,34 +1,30 @@
 {
-  "name": "stumbleploit",
+  "name": "@i-scrapper/stumble-guys",
   "version": "1.0.0",
-  "description": "X CHEAR",
-  "main": "index.js",
+  "description": "Stumble-Guys - i-scrapper",
+  "main": "stumble.js",
   "scripts": {
     "test": "node .",
     "start": "node ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XNorealsS/hgg.git"
+    "url": "git+https://github.com/i-scrapper/stumble-guys.git"
   },
   "keywords": [
-    "stumbleploit",
-    "XNOREALS"
+    "stumble-guys",
+    "i-scrapper"
   ],
-  "author": "XNOREALS",
+  "author": "i-scrapper",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/XNorealsS/hgg/issues"
+    "url": "https://github.com/i-scrapper/stumble-guys/issues"
   },
-  "homepage": "https://github.com/XNorealsS/hgg#readme",
+  "homepage": "https://github.com/i-scrapper/stumble-guys#readme",
   "dependencies": {
+    "@i-scrapper/plugins-request": "^1.0.0",
     "chalk": "^4.1.2",
     "figlet": "^1.5.2",
     "inquirer": "^8.2.4"
-    "cfonts": "^3.1.0",
-    "colour": "^0.7.1",
-    "moment": "^2.29.3",
-    "node-fetch": "^2.6.7",
-    "readline-sync": "^1.4.10"
   }
 }
