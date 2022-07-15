@@ -1,7 +1,6 @@
 const chalk = require("chalk");
 const figlet = require("figlet");
 const inquirer = require("inquirer");
-const rs = require('readline-sync');
 const request = require("@i-scrapper/plugins-request");
 
 
